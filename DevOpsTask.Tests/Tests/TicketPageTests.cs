@@ -75,7 +75,7 @@ namespace DevOpsTask.Tests
             page.EnterLogin("akim_lyubchenko@mail.ru");
             page.EnterPassword("akim_lyubchenko");
             page.ClickLoginButton();
-            Assert.AreEqual(expected: "Akim", actual: page.UserName);
+            Assert.AreEqual(expected: "AKIM", actual: page.UserName.ToUpper());
             Assert.IsTrue(page.Authorized);
         }
 
